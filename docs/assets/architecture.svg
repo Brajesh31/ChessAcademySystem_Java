@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+<title id="t">Current application architecture</title><desc id="d">Console user interacts with a single Java process that reads in-source credentials and local player and tournament text files.</desc>
+<defs><style>.box{fill:#eff6ff;stroke:#2563eb;stroke-width:2}.txt{font: bold 22px Arial;fill:#172554}.sub{font:16px Arial;fill:#334155}.line{stroke:#475569;stroke-width:3;fill:none;marker-end:url(#a)}</style><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6" fill="#475569"/></marker></defs>
+<rect width="1200" height="620" rx="24" fill="#f8fafc"/>
+<text x="600" y="58" text-anchor="middle" class="txt" font-size="30">Current system boundary</text>
+<rect x="60" y="245" width="220" height="110" rx="16" class="box"/><text x="170" y="290" text-anchor="middle" class="txt">Admin / User</text><text x="170" y="322" text-anchor="middle" class="sub">Terminal input/output</text>
+<rect x="420" y="205" width="350" height="190" rx="18" fill="#dcfce7" stroke="#059669" stroke-width="3"/><text x="595" y="260" text-anchor="middle" class="txt">Java console process</text><text x="595" y="298" text-anchor="middle" class="sub">chessAcademy.java</text><text x="595" y="330" text-anchor="middle" class="sub">Login • menus • record operations</text><text x="595" y="360" text-anchor="middle" class="sub">Single class, static methods</text>
+<rect x="900" y="95" width="240" height="100" rx="16" class="box"/><text x="1020" y="137" text-anchor="middle" class="txt">Credentials</text><text x="1020" y="166" text-anchor="middle" class="sub">In-source array</text>
+<rect x="900" y="265" width="240" height="100" rx="16" class="box"/><text x="1020" y="307" text-anchor="middle" class="txt">data.txt</text><text x="1020" y="336" text-anchor="middle" class="sub">Player records</text>
+<rect x="900" y="435" width="240" height="100" rx="16" class="box"/><text x="1020" y="477" text-anchor="middle" class="txt">tournaments.txt</text><text x="1020" y="506" text-anchor="middle" class="sub">Tournament records</text>
+<path d="M280 300H420" class="line"/><path d="M770 245L900 145" class="line"/><path d="M770 300H900" class="line"/><path d="M770 355L900 485" class="line"/>
+<text x="600" y="580" text-anchor="middle" class="sub">No database, web service, network API, or chess engine is currently implemented.</text>
+</svg>

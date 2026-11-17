@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="t d">
+<title id="t">Application workflow</title><desc id="d">Flow from program start to login, role selection, admin or regular menu, file operations and logout.</desc>
+<defs><style>.n{fill:#eff6ff;stroke:#2563eb;stroke-width:2}.g{fill:#dcfce7;stroke:#059669;stroke-width:2}.tx{font: bold 20px Arial;fill:#172554}.sm{font:16px Arial;fill:#334155}.ln{stroke:#475569;stroke-width:3;fill:none;marker-end:url(#ar)}</style><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6" fill="#475569"/></marker></defs>
+<rect width="1200" height="760" rx="24" fill="#f8fafc"/><text x="600" y="50" text-anchor="middle" class="tx" font-size="30">Chess Academy application workflow</text>
+<rect x="480" y="85" width="240" height="70" rx="16" class="g"/><text x="600" y="128" text-anchor="middle" class="tx">Start application</text>
+<rect x="480" y="205" width="240" height="80" rx="16" class="n"/><text x="600" y="238" text-anchor="middle" class="tx">Login / Exit</text><text x="600" y="263" text-anchor="middle" class="sm">Read credentials</text>
+<path d="M600 155V205" class="ln"/>
+<path d="M600 285V335" class="ln"/><path d="M600 335L320 390" class="ln"/><path d="M600 335L880 390" class="ln"/>
+<rect x="150" y="390" width="340" height="90" rx="16" class="g"/><text x="320" y="425" text-anchor="middle" class="tx">Admin menu</text><text x="320" y="453" text-anchor="middle" class="sm">Add/search players and tournaments</text>
+<rect x="710" y="390" width="340" height="90" rx="16" class="n"/><text x="880" y="425" text-anchor="middle" class="tx">Regular menu</text><text x="880" y="453" text-anchor="middle" class="sm">Display records, search tournaments</text>
+<path d="M320 480V535" class="ln"/><path d="M880 480V535" class="ln"/>
+<rect x="150" y="535" width="340" height="85" rx="16" class="n"/><text x="320" y="570" text-anchor="middle" class="tx">Local file operations</text><text x="320" y="597" text-anchor="middle" class="sm">data.txt / tournaments.txt</text>
+<rect x="710" y="535" width="340" height="85" rx="16" class="n"/><text x="880" y="570" text-anchor="middle" class="tx">Read and search files</text><text x="880" y="597" text-anchor="middle" class="sm">Print results to terminal</text>
+<path d="M320 620V670H600V705" class="ln"/><path d="M880 620V670H600" class="ln"/>
+<rect x="470" y="705" width="260" height="45" rx="12" class="g"/><text x="600" y="734" text-anchor="middle" class="tx">Menu / logout loop</text>
+</svg>

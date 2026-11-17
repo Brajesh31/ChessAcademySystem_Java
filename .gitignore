@@ -1,0 +1,22 @@
+# Java compilation output
+*.class
+out/
+build/
+
+# Runtime records may contain personal information
+data.txt
+tournaments.txt
+*.bak
+*.tmp
+
+# IDE and operating-system files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs and local reports
+*.log
+reports/local/

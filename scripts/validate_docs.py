@@ -12,18 +12,17 @@ REQUIRED = [
     "docs/security.md", "docs/data-formats.md", "docs/templates/README.md",
 ]
 missing = [name for name in REQUIRED if not (ROOT / name).is_file()]
-errors = []
-if missing:
-    errors.extend(f"Missing required file: {name}" for name in missing)
+errors = [f"Missing required file: {name}" for name in missing]
 
-link_pattern = re.compile(r"!?[[^]]*](([^)]+))")
+# Markdown links and image links. Ignore remote URLs and fragment-only links.
+link_pattern = re.compile(r"!?(\[[^\]]*\])\(([^)]+)\)")
 for md in ROOT.rglob("*.md"):
     if any(part.startswith(".") for part in md.relative_to(ROOT).parts):
         continue
     text = md.read_text(encoding="utf-8")
-    for target in link_pattern.findall(text):
+    for _, target in link_pattern.findall(text):
         target = target.strip().split("#", 1)[0]
-        if not target or "://" in target or target.startswith("mailto:") or target.startswith("#"):
+        if not target or "://" in target or target.startswith("mailto:"):
             continue
         resolved = (md.parent / target).resolve()
         try:
